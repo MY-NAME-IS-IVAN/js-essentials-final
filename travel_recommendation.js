@@ -1,4 +1,4 @@
-async function test() {
+async function search() {
   const response = await fetch('./travel_recommendation_api.json');
   const json = await response.json();
 
@@ -60,4 +60,12 @@ async function test() {
       resultsList.appendChild(listItem);
     }
   }
+}
+
+const clearBtn = document.getElementById('clearBtn');
+
+
+clearBtn.onclick = () => {
+  const resultsList = document.getElementById('results');
+  resultsList.innerHTML = '';
 }
