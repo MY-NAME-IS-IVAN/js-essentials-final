@@ -1,35 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li>
-                <a href="">About Us</a>
-            </li>
-            <li>
-                <a href="">Contact Us</a>
-            </li>
-        </ul>
-        <div>
-            <input type="text">
-            <button>Search</button>
-            <button>Clear</button>
-        </div>
+      <ul>
+        <li>
+          <a href="/travel_recommendation.html">Home</a>
+        </li>
+        <li>
+          <a href="/about_us.html">About Us</a>
+        </li>
+        <li>
+          <a href="/contact_us.html">Contact Us</a>
+        </li>
+      </ul>
+      <div class="search">
+        <input
+          class="destination-search"
+          type="text"
+          placeholder="Enter a destination keyword"
+        />
+        <button type="button" onclick="test()">Search</button>
+        <button>Clear</button>
+      </div>
     </nav>
-    <main>
-        <h1>
-            Explore<br/>
-            Dream<br/>
-            Destination
-        </h1>
+    <main class="home">
+      <h1>
+        Explore<br />
+        Dream<br />
+        Destination
+      </h1>
+      <p>
+        It encourages exploration of unfamiliar territories, embracing diverse
+        cultures and landscapes, while pursuing the desired destination that
+        captivates the heart and ignites a sense of wonder.
+      </p>
     </main>
-</body>
+    <!-- <ul class="results">
+      <li>
+        <img
+          src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <h2>Sydney, Australia</h2>
+        <p>
+          A vibrant city known for its iconic landmarks like the Sydney Opera
+          House and Sydney Harbour Bridge.
+        </p>
+      </li>
+    </ul> -->
+    <script src="./travel_recommendation.js"></script>
+  </body>
 </html>
